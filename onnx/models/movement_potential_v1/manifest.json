@@ -1,0 +1,30 @@
+{
+  "modelId": "movement_potential_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "7f701d8d2dbaab0a057adfc628a0c6cdbe60fbb8de23777e23bd76ca676475ef",
+  "taskType": "MovementPotential",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 512,
+  "strideSamples": 256,
+  "inputShape": "[1, 4, 512]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.1_30",
+  "thresholdPolicy": "movement_preparation>=0.50",
+  "labels": [
+    "rest",
+    "movement_preparation"
+  ],
+  "channelLabels": [
+    "C3",
+    "Cz",
+    "C4",
+    "Fz"
+  ],
+  "description": "1D-CNN 运动准备电位检测模型 (C3/Cz/C4/Fz, 2s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 3250,
+  "createdAt": "2026-03-26T19:10:48.881547+00:00"
+}

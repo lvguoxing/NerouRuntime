@@ -1,0 +1,33 @@
+{
+  "modelId": "eog_intent_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "0f6c258f40f901047e36f54c09ed95ebe21edb0db75b0b46d5b76d71db32211f",
+  "taskType": "EOGIntent",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 128,
+  "inputShape": "[1, 4, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.5_30",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "neutral",
+    "look_left",
+    "look_right",
+    "look_up",
+    "blink"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F8"
+  ],
+  "description": "1D-CNN 眼动意图五分类模型 (Fp1/Fp2/F7/F8, 1s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 3221,
+  "createdAt": "2026-03-26T19:10:48.889458+00:00"
+}

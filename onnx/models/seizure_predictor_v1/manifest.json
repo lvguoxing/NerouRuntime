@@ -1,0 +1,42 @@
+{
+  "modelId": "seizure_predictor_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "a3fd3dd8dbe46a4d70bd5dc0833ceaa95d2a34f40d8d1d4aef3256a36324852e",
+  "taskType": "SeizurePrediction",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 2048,
+  "strideSamples": 1024,
+  "inputShape": "[1, 16, 2048]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_1_45",
+  "thresholdPolicy": "preictal>=0.60",
+  "labels": [
+    "interictal",
+    "preictal"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8"
+  ],
+  "description": "1D-CNN 癫痫发作预测模型 (发作间期/先兆期二分类, 8s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 63458,
+  "createdAt": "2026-03-26T19:10:48.788024+00:00"
+}

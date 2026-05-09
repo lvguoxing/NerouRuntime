@@ -1,0 +1,42 @@
+{
+  "modelId": "seizure_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "8d9743a97d886a1c3a7a6783b5922b27450b7ef6e7253c14bfd8078b9493a656",
+  "taskType": "SeizureDetection",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 512,
+  "strideSamples": 256,
+  "inputShape": "[1, 16, 512]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_1_45",
+  "thresholdPolicy": "seizure>=0.60",
+  "labels": [
+    "normal",
+    "seizure"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F7",
+    "F3",
+    "Fz",
+    "F4",
+    "F8",
+    "T7",
+    "C3",
+    "Cz",
+    "C4",
+    "T8",
+    "P7",
+    "P3",
+    "Pz",
+    "P4"
+  ],
+  "description": "1D-CNN 癫痫自动检测 (SeizureNet-inspired, CHB-MIT/TUH 数据集)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 113602,
+  "createdAt": "2026-03-26T19:10:43.191172+00:00"
+}

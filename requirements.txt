@@ -1,0 +1,24 @@
+# NerouRuntime — Python 环境依赖
+# 安装命令: pip install -r requirements.txt
+# 推荐 Python 版本: 3.9 ~ 3.11
+
+# ── 核心深度学习 ──────────────────────────────────────────────────────────────
+# CPU 版本（无 GPU）:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# CUDA 12.1 版本:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0.0
+numpy>=1.24.0
+
+# ── ONNX 导出 ────────────────────────────────────────────────────────────────
+onnx>=1.14.0
+onnxruntime>=1.16.0
+
+# ── 脑电信号处理（数据预处理模块使用）───────────────────────────────────────
+mne>=1.4.0
+braindecode>=0.8.1
+
+# ── 工具库 ───────────────────────────────────────────────────────────────────
+scipy>=1.10.0          # MNE 依赖
+scikit-learn>=1.3.0    # 数据集划分 / 评估指标（可选）
+tqdm>=4.65.0           # 进度条（可选）

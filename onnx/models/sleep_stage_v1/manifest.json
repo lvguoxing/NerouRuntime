@@ -1,0 +1,33 @@
+{
+  "modelId": "sleep_stage_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "43f61208831a8362b2132e6c26d85906a0a9f3efa152fa197e18817d15d2e998",
+  "taskType": "SleepStaging",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 1500,
+  "strideSamples": 750,
+  "inputShape": "[1, 4, 1500]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.3_35",
+  "thresholdPolicy": "argmax",
+  "labels": [
+    "Wake",
+    "N1",
+    "N2",
+    "N3",
+    "REM"
+  ],
+  "channelLabels": [
+    "Fz",
+    "Cz",
+    "Pz",
+    "Oz"
+  ],
+  "description": "多尺度 1D-CNN 睡眠分期 (LightSleepNet-inspired, Sleep-EDF 数据集)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 20581,
+  "createdAt": "2026-03-26T19:10:43.794146+00:00"
+}

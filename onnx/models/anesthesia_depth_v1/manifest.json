@@ -1,0 +1,30 @@
+{
+  "modelId": "anesthesia_depth_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "dfbecdf8694a0c4d9ea3d59e0c0b88b1bb73b35776deb3b91dc18db2013093e5",
+  "taskType": "AnesthesiaDepth",
+  "channelCount": 2,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 1024,
+  "strideSamples": 512,
+  "inputShape": "[1, 2, 1024]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.5_45",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "awake",
+    "light_anesthesia",
+    "moderate_anesthesia",
+    "deep_anesthesia"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2"
+  ],
+  "description": "1D-CNN 麻醉深度四级分类模型 (Fp1/Fp2双导联, 4s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 1228,
+  "createdAt": "2026-03-26T19:10:48.849120+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "modelId": "eeg_denoise_v6",
+  "modelVersion": "6.0.0",
+  "modelSha256": "96847e483b04319d886c316d999b5e719c72f82974be23cd2ab6dd613767c9bc",
+  "taskType": "EegDenoise",
+  "channelCount": 1,
+  "leadSystem": "any",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 1024,
+  "strideSamples": 1024,
+  "inputShape": "[1, 1, 1024]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "raw",
+  "thresholdPolicy": "none",
+  "labels": [
+    "denoised"
+  ],
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 137,
+  "createdAt": "2026-03-26T19:27:16.832847+00:00",
+  "perChannelModel": true
+}

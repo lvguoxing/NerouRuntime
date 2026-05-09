@@ -1,0 +1,25 @@
+{
+  "modelId": "artifact_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "a576c984ed11e630c0ae2ad10929558bb44efd1ffe7ea34b99650cb3d8e4674f",
+  "taskType": "ArtifactDetection",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 128,
+  "inputShape": "[1, 16, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "raw",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "normal",
+    "eye_blink",
+    "muscle",
+    "electrode_pop"
+  ],
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 26532,
+  "createdAt": "2026-03-26T19:10:46.944322+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "modelId": "demo_train_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "6bb704383fc765b1467aa83dabf42ae246aff104b78a3aa9e9d0a3773cb93b6c",
+  "taskType": "BCIIntent",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 64,
+  "inputShape": "[1, 4, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_8_30",
+  "thresholdPolicy": "argmax>=0.45",
+  "labels": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "description": "train_classifier.py 训练导出",
+  "opsetVersion": 13,
+  "framework": "pytorch",
+  "parameterCount": 1236,
+  "createdAt": "2026-03-31T06:15:39.173601+00:00"
+}

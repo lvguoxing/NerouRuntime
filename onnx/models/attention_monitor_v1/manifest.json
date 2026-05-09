@@ -1,0 +1,31 @@
+{
+  "modelId": "attention_monitor_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "fdb87b3d2a19b653a3b24e3f42fb1f24ebd942fe7a4e2a3af47a5d482d618da4",
+  "taskType": "AttentionMonitoring",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 512,
+  "strideSamples": 256,
+  "inputShape": "[1, 4, 512]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "raw",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "distracted",
+    "normal",
+    "focused"
+  ],
+  "channelLabels": [
+    "Fz",
+    "Cz",
+    "Pz",
+    "Oz"
+  ],
+  "description": "1D-CNN 注意力状态实时监测模型 (Fz/Cz/Pz/Oz, 2s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 3283,
+  "createdAt": "2026-03-26T19:10:48.030177+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "modelId": "erp_p300_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "68c4b1f8a47a5a81a3425026fe65487ee1801faf3cb5f5c88f6d35da561bb074",
+  "taskType": "ERPDetection",
+  "channelCount": 8,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 200,
+  "strideSamples": 100,
+  "inputShape": "[1, 8, 200]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.1_30",
+  "thresholdPolicy": "target>=0.50",
+  "labels": [
+    "non_target",
+    "target"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "O1",
+    "O2",
+    "T7",
+    "T8"
+  ],
+  "description": "1D-CNN P300事件相关电位检测模型 (800ms刺激后窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 2290,
+  "createdAt": "2026-03-26T19:10:48.765370+00:00"
+}

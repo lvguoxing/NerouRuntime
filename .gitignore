@@ -1,0 +1,59 @@
+# Build output
+build/
+out/
+cmake-build-*/
+
+# Compiled objects
+*.o
+*.obj
+*.slo
+*.lo
+*.a
+*.lib
+*.dll
+*.exe
+*.so
+*.dylib
+
+# Precompiled headers
+*.gch
+*.pch
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sdf
+*.opensdf
+CMakeUserPresets.json
+
+# Logs
+*.log
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# data (large binary)
+data/*.bdf
+data/*.edf
+data/*.set
+data/*.fdt
+data/raw/
+data/raw_files/
+data/cache/
+data/npz/
+
+# EEG storage (large)
+EegdataStorage/
+
+# Large onnxruntime binaries (use LFS if needed)
+onnxruntime-local/

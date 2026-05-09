@@ -1,0 +1,41 @@
+{
+  "modelId": "brain_age_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "df32150644036876aec8866eec1f3d09b89803e4052ad4327d3c3b0468fb55ba",
+  "taskType": "BrainAgePrediction",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 2500,
+  "strideSamples": 1250,
+  "inputShape": "[1, 16, 2500]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_0.5_45",
+  "thresholdPolicy": "regression",
+  "labels": [
+    "predicted_age"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8"
+  ],
+  "description": "1D-CNN 脑年龄回归预测模型 (全头皮16导联, 10s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 34529,
+  "createdAt": "2026-03-26T19:10:48.863510+00:00"
+}

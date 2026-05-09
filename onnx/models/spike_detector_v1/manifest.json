@@ -1,0 +1,42 @@
+{
+  "modelId": "spike_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "1f940d8f32a947f98bd2a59255c220ace8a5dfb8779b4aba7341c494eaa02d71",
+  "taskType": "SpikeDetection",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 128,
+  "strideSamples": 64,
+  "inputShape": "[1, 16, 128]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_1_70",
+  "thresholdPolicy": "spike>=0.50",
+  "labels": [
+    "normal",
+    "spike"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2",
+    "F7",
+    "F8",
+    "T7",
+    "T8",
+    "P7",
+    "P8"
+  ],
+  "description": "1D-CNN 脑电棘波自动检测模型 (16导联, 0.5s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 5762,
+  "createdAt": "2026-03-26T19:10:48.872536+00:00"
+}

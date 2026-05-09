@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "product": "NerouRuntime",
+  "positioning": "EEG and neurophysiology training-file classification platform",
+  "flow": [
+    "raw_files",
+    "training_files",
+    "processed_npz",
+    "preprocessing",
+    "training",
+    "onnx_export",
+    "runtime_validation",
+    "runtime_data",
+    "production_package"
+  ],
+  "application_dirs": {
+    "training_files": "data/training_files",
+    "raw_files": "data/raw_files",
+    "processed_npz": "data/processed_npz",
+    "samples": "data/samples",
+    "cache": "data/cache",
+    "onnx_models": "onnx/models",
+    "onnx_deploy": "onnx/deploy",
+    "runtime_data": "onnx/runtime_data",
+    "runtime_packages": "onnx/runtime_packages",
+    "reports": "reports",
+    "logs": "logs",
+    "projects": "projects"
+  },
+  "project_dirs": {
+    "training_files": "training_files",
+    "datasets": "datasets",
+    "preprocessing": "preprocessing",
+    "training_runs": "training_runs",
+    "models": "models",
+    "exports": "exports",
+    "runtime_data": "runtime_data",
+    "runtime_packages": "runtime_packages",
+    "validations": "validations",
+    "reports": "reports",
+    "logs": "logs"
+  }
+}

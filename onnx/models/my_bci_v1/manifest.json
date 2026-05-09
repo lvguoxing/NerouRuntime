@@ -1,0 +1,26 @@
+{
+  "modelId": "my_bci_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "1c4e13fa6d6f7af56c83897dbd7bc146f45891566e22c08b765cf11aafce7bf6",
+  "taskType": "BCIIntent",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 64,
+  "inputShape": "[1, 4, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_8_30",
+  "thresholdPolicy": "argmax>=0.45",
+  "labels": [
+    "left_hand",
+    "right_hand",
+    "feet",
+    "rest"
+  ],
+  "description": "train_classifier.py 训练导出",
+  "opsetVersion": 13,
+  "framework": "pytorch",
+  "parameterCount": 1236,
+  "createdAt": "2026-03-31T06:18:42.053111+00:00"
+}

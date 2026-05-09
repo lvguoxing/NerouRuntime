@@ -1,0 +1,35 @@
+{
+  "modelId": "drowsiness_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "76e2fd451312c5aa114cb520ed4d227784aef4ebf8cea05376503d0133223d38",
+  "taskType": "DrowsinessDetection",
+  "channelCount": 8,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 512,
+  "strideSamples": 256,
+  "inputShape": "[1, 8, 512]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_1_30",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "alert",
+    "drowsy",
+    "sleeping"
+  ],
+  "channelLabels": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "O1",
+    "O2",
+    "T7",
+    "T8"
+  ],
+  "description": "1D-CNN 困倦/嗜睡状态检测模型 (8导联, 2s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 7323,
+  "createdAt": "2026-03-26T19:10:48.407633+00:00"
+}

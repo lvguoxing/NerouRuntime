@@ -1,0 +1,32 @@
+{
+  "modelId": "bci_motor_imagery_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "12cd589728e136740d1a0756961bd080649821ec303e89c03d0107039d9176f6",
+  "taskType": "BCIIntent",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 64,
+  "inputShape": "[1, 4, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_8_30",
+  "thresholdPolicy": "argmax>=0.45",
+  "labels": [
+    "left_hand",
+    "right_hand",
+    "feet",
+    "rest"
+  ],
+  "channelLabels": [
+    "C3",
+    "Cz",
+    "C4",
+    "Fz"
+  ],
+  "description": "EEGNet-inspired BCI 运动想象 (BCI Competition IV 数据集)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 8012,
+  "createdAt": "2026-03-26T19:10:45.577854+00:00"
+}

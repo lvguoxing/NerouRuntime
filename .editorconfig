@@ -1,0 +1,33 @@
+root = true
+
+# ----------------------------------------------------------------------------
+# 统一源码编码，避免编辑器（含 Cursor / VS Code）自动给 Windows
+# cmd/bat 批处理加 UTF-8 BOM 导致 @echo off 被 cmd.exe 当作未知命令。
+# ----------------------------------------------------------------------------
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Windows 批处理：CRLF + 无 BOM
+[*.{cmd,bat}]
+end_of_line = crlf
+charset = utf-8
+
+# C++ / CMake
+[*.{cpp,h,hpp,cc,cxx,inl}]
+indent_size = 4
+
+[CMakeLists.txt]
+indent_size = 4
+
+[*.cmake]
+indent_size = 4
+
+# Markdown：保留行尾空格语义
+[*.md]
+trim_trailing_whitespace = false

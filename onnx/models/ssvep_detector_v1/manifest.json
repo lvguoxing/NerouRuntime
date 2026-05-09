@@ -1,0 +1,33 @@
+{
+  "modelId": "ssvep_detector_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "e8d4f9550f59ddfe77113a97776d17c5109425b0795e41f2427ccb1af2e77033",
+  "taskType": "SSVEPDetection",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 128,
+  "inputShape": "[1, 4, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_4_45",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "idle",
+    "7.5Hz",
+    "10Hz",
+    "12Hz",
+    "15Hz"
+  ],
+  "channelLabels": [
+    "O1",
+    "O2",
+    "Oz",
+    "Pz"
+  ],
+  "description": "1D-CNN 稳态视觉诱发电位 (SSVEP) 频率分类模型",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 6357,
+  "createdAt": "2026-03-26T19:10:48.753251+00:00"
+}

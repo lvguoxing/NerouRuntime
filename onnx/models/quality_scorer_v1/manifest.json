@@ -1,0 +1,24 @@
+{
+  "modelId": "quality_scorer_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "16fcbac91af3adce064bba36817c90046fc05315a546a8c711a226496785b8e0",
+  "taskType": "QualityScoring",
+  "channelCount": 16,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 256,
+  "strideSamples": 128,
+  "inputShape": "[1, 16, 256]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "raw",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "good",
+    "moderate",
+    "poor"
+  ],
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 9435,
+  "createdAt": "2026-03-26T19:10:46.418996+00:00"
+}

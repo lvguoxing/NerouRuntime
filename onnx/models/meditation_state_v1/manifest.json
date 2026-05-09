@@ -1,0 +1,32 @@
+{
+  "modelId": "meditation_state_v1",
+  "modelVersion": "1.0.0",
+  "modelSha256": "fcf758c799582cb0ebd1cef2de397bcdb829675a932fe0b8f0a16b66b99b32e3",
+  "taskType": "MeditationState",
+  "channelCount": 4,
+  "leadSystem": "10-20",
+  "sampleRateHz": 250.0,
+  "windowSizeSamples": 1024,
+  "strideSamples": 512,
+  "inputShape": "[1, 4, 1024]",
+  "inputUnit": "uV",
+  "preprocessingSignature": "bandpass_1_30",
+  "thresholdPolicy": "argmax>=0.50",
+  "labels": [
+    "normal",
+    "light",
+    "moderate",
+    "deep"
+  ],
+  "channelLabels": [
+    "Fz",
+    "Cz",
+    "Pz",
+    "Oz"
+  ],
+  "description": "1D-CNN 冥想状态四级分类模型 (Fz/Cz/Pz/Oz, 4s窗口)",
+  "opsetVersion": 13,
+  "framework": "onnx-helper",
+  "parameterCount": 7572,
+  "createdAt": "2026-03-26T19:10:48.833064+00:00"
+}
